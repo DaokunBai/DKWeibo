@@ -12,9 +12,11 @@
 		6578F2061E20C72600800551 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6578F2041E20C72600800551 /* Main.storyboard */; };
 		6578F2081E20C72600800551 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6578F2071E20C72600800551 /* Assets.xcassets */; };
 		6578F20B1E20C72600800551 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6578F2091E20C72600800551 /* LaunchScreen.storyboard */; };
+		7B113B20DD5F5E71ACF26A1C /* Pods_DKWeibo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BB7B02A8500B6A97D7798D4 /* Pods_DKWeibo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		569E3D441ECD2CA94891018E /* Pods-DKWeibo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DKWeibo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DKWeibo/Pods-DKWeibo.release.xcconfig"; sourceTree = "<group>"; };
 		6578F1FD1E20C72500800551 /* DKWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DKWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6578F2001E20C72600800551 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6578F2021E20C72600800551 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		6578F2071E20C72600800551 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6578F20A1E20C72600800551 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6578F20C1E20C72600800551 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B1CB1D651CF2BAB0633F447 /* Pods-DKWeibo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DKWeibo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DKWeibo/Pods-DKWeibo.debug.xcconfig"; sourceTree = "<group>"; };
+		9BB7B02A8500B6A97D7798D4 /* Pods_DKWeibo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DKWeibo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B113B20DD5F5E71ACF26A1C /* Pods_DKWeibo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0EB774CD97AADCAE39901819 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9BB7B02A8500B6A97D7798D4 /* Pods_DKWeibo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		32F12F8AD5EE517C4FEB9064 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6B1CB1D651CF2BAB0633F447 /* Pods-DKWeibo.debug.xcconfig */,
+				569E3D441ECD2CA94891018E /* Pods-DKWeibo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6578F1F41E20C72500800551 = {
 			isa = PBXGroup;
 			children = (
 				6578F1FF1E20C72600800551 /* DKWeibo */,
 				6578F1FE1E20C72600800551 /* Products */,
+				32F12F8AD5EE517C4FEB9064 /* Pods */,
+				0EB774CD97AADCAE39901819 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6578F20F1E20C72600800551 /* Build configuration list for PBXNativeTarget "DKWeibo" */;
 			buildPhases = (
+				BD51F3DE0D25176A02830915 /* [CP] Check Pods Manifest.lock */,
 				6578F1F91E20C72500800551 /* Sources */,
 				6578F1FA1E20C72500800551 /* Frameworks */,
 				6578F1FB1E20C72500800551 /* Resources */,
+				F4866A55C77D55A85807112B /* [CP] Embed Pods Frameworks */,
+				8398CA584DA383BDF3F992DF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8398CA584DA383BDF3F992DF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DKWeibo/Pods-DKWeibo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD51F3DE0D25176A02830915 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F4866A55C77D55A85807112B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DKWeibo/Pods-DKWeibo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6578F1F91E20C72500800551 /* Sources */ = {
@@ -256,6 +331,7 @@
 		};
 		6578F2101E20C72600800551 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B1CB1D651CF2BAB0633F447 /* Pods-DKWeibo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DKWeibo/Info.plist;
@@ -268,6 +344,7 @@
 		};
 		6578F2111E20C72600800551 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 569E3D441ECD2CA94891018E /* Pods-DKWeibo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DKWeibo/Info.plist;
